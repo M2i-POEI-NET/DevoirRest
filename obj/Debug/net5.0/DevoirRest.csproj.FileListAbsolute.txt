@@ -31,3 +31,8 @@ D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Npgsql.dll
 D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 D:\WorkSpace\M2I\DevoirRest\obj\Debug\net5.0\DevoirRest.csproj.CopyComplete
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\WorkSpace\M2I\DevoirRest\obj\Debug\net5.0\DevoirRest.MvcApplicationPartsAssemblyInfo.cs
