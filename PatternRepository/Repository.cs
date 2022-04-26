@@ -21,6 +21,7 @@ namespace DevoirRest.PatternRepository
 
                 return _ctx ?? new ApplicationDBContext(optionsBuilder.Options);
             }
+
         }
 
         /// <summary>
