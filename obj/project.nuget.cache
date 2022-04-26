@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qsfE2IEM2Z2ZoWcesqR2eRENqowuEGOLoYmLXBKRNfpvz5o8AQvssNwoyFTQjWeaRw8dj/alNBCRvScn02QfmQ==",
+  "success": true,
+  "projectFilePath": "D:\\WorkSpace\\M2I\\DevoirRest\\DevoirRest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dongm\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
