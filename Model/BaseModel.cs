@@ -21,6 +21,7 @@ namespace DevoirRest.Model
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public bool IsActive { get; set; }
+
         /// <summary>
         ///      Use to perform all the creations
         /// </summary>
@@ -33,7 +34,7 @@ namespace DevoirRest.Model
         }
 
         /// <summary>
-        ///     Use to perform all the update and delete actions
+        ///     Use to perform all the update and delete actions in DB
         /// </summary>
         /// <param name="IsActive"></param>
         public void BaseUpdate (bool IsActive)

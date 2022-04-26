@@ -5,7 +5,15 @@ using System.Threading.Tasks;
 
 namespace DevoirRest.Model
 {
-    public class Enrollement
+    public class Enrollement : BaseModel
     {
+        public int CourseId { get; set; }
+        public int StudentId { get; set; }
+
+
+
+
+        public Student Student { get; set; }
+        public Course Course { get; set; }
     }
 }
