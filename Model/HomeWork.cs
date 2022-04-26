@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace DevoirRest.Model
 {
+    [Table("core_t_home_work")]
     public class HomeWork : BaseModel
     {
+        [Column("course_id")]
+        [ForeignKey("Course")]
         public int CourseId { get; set; }
 
         /// <summary>
