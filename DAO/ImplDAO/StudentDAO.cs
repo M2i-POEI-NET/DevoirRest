@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DevoirRest.DAO.ImplDAO
 {
-    public class StudentDAO : Repository<Student>, IStuddentDAO
+    public class StudentDAO : Repository<Student>, IStudentDAO
     {
         public StudentDAO() : base(Ctx)
         {

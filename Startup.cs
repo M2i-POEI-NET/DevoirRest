@@ -1,4 +1,8 @@
+using DevoirRest.BussinessLogic.IServices;
+using DevoirRest.BussinessLogic.Services;
 using DevoirRest.Context;
+using DevoirRest.DAO.IDAO;
+using DevoirRest.DAO.ImplDAO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,8 +35,15 @@ namespace DevoirRest
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevoirRest Project description", Version = "v1" });
             });
+            services.AddDbContext<ApplicationDBContext>();
             services.AddControllers();
             services.AddDbContext<ApplicationDBContext> (options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            
+
+
+            // dependency injection
+            services.AddTransient<IStudentDAO, StudentDAO>();
+            services.AddTransient<IStudentService, StudentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

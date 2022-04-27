@@ -36,3 +36,7 @@ D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\WorkSpace\M2I\DevoirRest\obj\Debug\net5.0\DevoirRest.MvcApplicationPartsAssemblyInfo.cs
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\System.Web.Http.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\WorkSpace\M2I\DevoirRest\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

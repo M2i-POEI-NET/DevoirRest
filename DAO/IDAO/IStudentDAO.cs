@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevoirRest.DAO.IDAO
 {
-    public interface IStuddentDAO : IRepository<Student>
+    public interface IStudentDAO : IRepository<Student>
     {
     }
 }
