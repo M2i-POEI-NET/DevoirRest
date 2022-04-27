@@ -1,4 +1,6 @@
-﻿using DevoirRest.Model;
+﻿using DevoirRest.DTO.ViewBindingModel;
+using DevoirRest.DTO.ViewModel;
+using DevoirRest.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +10,8 @@ namespace DevoirRest.BussinessLogic.IServices
 {
     public interface IStudentService
     {
-        public Student GetById(int Id);
-        public bool Create(Student model);
+        public StudentVBM GetById(int Id);
+        public bool Create(StudentVM model);
 
     }
 }

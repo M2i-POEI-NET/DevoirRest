@@ -13,6 +13,7 @@ namespace DevoirRest.PatternRepository
     public class Repository<T> : IRepository<T> where T : BaseModel
     {
         public static readonly ApplicationDBContext _ctx = null;
+        
         public static ApplicationDBContext Ctx
         {
             get

@@ -1,5 +1,6 @@
 ﻿using DevoirRest.BussinessLogic.IServices;
 using DevoirRest.BussinessLogic.Services;
+using DevoirRest.DTO.ViewModel;
 using DevoirRest.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -26,7 +27,7 @@ namespace DevoirRest.Controller
         }
 
         [HttpPost]
-        public ActionResult Post(Student model)
+        public ActionResult Post(StudentVM model)
         {
             var result = _studentService.Create(model);
             return Ok(result);

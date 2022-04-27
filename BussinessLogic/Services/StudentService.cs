@@ -1,6 +1,8 @@
 ﻿using DevoirRest.BussinessLogic.IServices;
 using DevoirRest.DAO.IDAO;
 using DevoirRest.DAO.ImplDAO;
+using DevoirRest.DTO.ViewBindingModel;
+using DevoirRest.DTO.ViewModel;
 using DevoirRest.Model;
 using System;
 using System.Collections.Generic;
@@ -22,7 +24,7 @@ namespace DevoirRest.BussinessLogic.Services
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        public bool Create(Student model)
+        public bool Create(StudentVM model)
         {
             bool result = false;
             if (model == null )
@@ -52,7 +54,7 @@ namespace DevoirRest.BussinessLogic.Services
             return result;
         }
 
-        public Student GetById(int Id)
+        public StudentVBM GetById(int Id)
         {
             if (Id <0)
             {
@@ -61,7 +63,13 @@ namespace DevoirRest.BussinessLogic.Services
             try
             {
                 var result = _studentDao.GetById(Id);
-                return result;
+                var vbm = new StudentVBM()
+                {
+                    Code = result.Code,
+                    Name = result.Name,
+                    Id = result.Id
+                };
+                return vbm;
             }
             catch (Exception e)
             {

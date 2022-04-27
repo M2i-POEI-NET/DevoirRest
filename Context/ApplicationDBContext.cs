@@ -41,9 +41,7 @@ namespace DevoirRest.Context
                           .ConfigureWarnings(w => w.Ignore(CoreEventId.LazyLoadOnDisposedContextWarning))
                           .UseNpgsql(connectionString);
 
-            //optionsBuilder.UseNpgsql(connectionString, x => x.MigrationsHistoryTable("__EFMigrationsHistory", "EFMigrationsHistory"));
-
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
