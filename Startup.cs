@@ -20,7 +20,8 @@ namespace DevoirRest
 {
     public class Startup
     {
-
+        // cores configuration
+        readonly string MyAllowSpecificOrigins = "http://localhost:41017";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -38,8 +39,18 @@ namespace DevoirRest
             services.AddDbContext<ApplicationDBContext>();
             services.AddControllers();
             services.AddDbContext<ApplicationDBContext> (options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-            
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:41017/")
+                                      .AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader();
+                                  });
+            });
 
             // dependency injection
             services.AddTransient<IStudentDAO, StudentDAO>();
@@ -58,6 +69,7 @@ namespace DevoirRest
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
 
             app.UseRouting();
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
